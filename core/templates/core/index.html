@@ -8,10 +8,10 @@
             {% for item in items %}
             <div class="">
                 <a href="{% url 'item:details' item.id %}">
-                    <div class="p-6 bg-gray-200 rounded-b-xl">
-                        <img src="{{ item.image.url }}" class = "object-cover h-60 w-96 rounded-t-xl" alt="#">
+                    <div class="p-6 bg-gray-200 rounded-xl">
+                        <img src="{{ item.image.url }}" class = "object-cover h-60 w-96 rounded-xl" alt="#">
                     </div>
-                    <div class="p-6 bg-white rounded-b-xl">
+                    <div class="p-6 bg-white rounded-xl">
                         <h3 class="text-xl">{{ item.name }}</h2>
                         <p class="text-gray-500">Price: {{ item.price }} USD</p>
 
@@ -28,7 +28,7 @@
             {% for category in categories %}
             <div class="">
                 <a href="#">
-                    <div class="p-6 bg-white rounded-b-xl">
+                    <div class="p-6 bg-white rounded-xl">
                         <h3 class="text-xl">{{ category.name }}</h2>
                         <p class="text-gray-500">{{ category.items.count }} Items</p>
 
